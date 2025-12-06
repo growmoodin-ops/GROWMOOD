@@ -1,0 +1,22 @@
+/* styles.css - Growmood PWA simple styling */
+:root{
+  --blue:#0a57ff;
+  --navy:#062b66;
+  --bg:#f8fbff;
+  --card:#ffffff;
+}
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, Arial, sans-serif}
+body{margin:0;background:var(--bg);color:#0b223a}
+.hero{padding:28px;text-align:center;background:linear-gradient(180deg,#ffffff, #eef6ff);border-bottom:1px solid #e6f0ff}
+.logo{max-width:280px;height:auto}
+.hero h1{margin:8px 0 0;font-size:32px;color:var(--blue)}
+.tagline{color:var(--navy);margin:6px 0 14px}
+.primary, .outline, .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;margin:6px 6px}
+.primary{background:var(--blue);color:#fff}
+.outline{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+.card-grid{padding:18px;max-width:980px;margin:18px auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(10,87,255,0.08)}
+.form-section{padding:18px;text-align:center}
+footer{padding:18px;text-align:center;color:#6b7a8f}
+@media (prefers-color-scheme:dark){body{background:#061022;color:#cfe1ff}}
